@@ -1,0 +1,75 @@
+{
+    "languageModel": {
+      "types": [
+        {
+          "name": "word",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "value": "someword",
+                "synonyms": []
+              }
+            }
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "samples": [
+            "The answer is {Item}",
+            "Answer is {Item}",
+            "Is it {Item}",
+            "It's {Item}",
+            "The Word is {Item}"
+          ],
+          "slots": [
+            {
+              "name": "Item",
+              "type": "word"
+            }
+          ]
+        },
+        {
+          "name": "DefinitionIntent",
+          "samples": [
+            "Give me a definition",
+            "definition",
+            "give me a word to guess"
+          ],
+          "slots": []
+        },
+        {
+          "name": "GiveupIntent",
+          "samples": [
+            "I give up",
+            "Give up"
+          ],
+          "slots": []
+        },
+        {
+          "name": "RepeatIntent",
+          "samples": [
+            "Repeat the definition",
+            "Can I hear that again",
+            "what was that"
+          ],
+          "slots": []
+        }
+      ],
+      "invocationName": "guess a word"
+    }
+  }
